@@ -1,0 +1,700 @@
+Q. What is SQL?
+--
+SQL stands for "Structured Query Language." It is a domain-specific programming language designed for managing and manipulating relational databases. SQL allows users to interact with databases by defining, accessing, and manipulating the data within them. It provides a standardized way to communicate with databases, making it easy to perform various operations such as querying, inserting, updating, and deleting data.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is MySQL?
+--
+
+MySQL is an open-source relational database management system (RDBMS) that is widely used for building and managing databases. It is one of the most popular database systems in the world and is favored by developers and businesses for its ease of use, reliability, and performance.
+
+                                                                        (OR)
+
+MySQL is an open-source relational database management system. As with other relational databases, MySQL stores data in tables made up of rows and columns. Users can define, manipulate, control, and query data using Structured Query Language, more commonly known as SQL. MySQL’s name is a combination of “My,” the name of MySQL creator Michael Widenius’s daughter, and “SQL”.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	
+
+Q. What is an RDBMS (Relational Database Management System)?
+--  
+An RDBMS is a type of database management system (DBMS) that stores data in a row-based table structure which connects related data elements. An RDBMS includes functions that maintain the security, accuracy, integrity and consistency of the data. This is different than the file storage used in a DBMS.
+
+                                                           (OR)
+
+RDBMS stands for "Relational Database Management System." It is a type of database management system that is based on the relational model of data. In an RDBMS, data is organized into tables, which consist of rows and columns. Each row represents a record or data entry, and each column represents a specific attribute or field of that record.
+it includes 
+security accurassi and data itegrity
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.What is the difference between SQL and MySQL?
+
+SQL is a standard language for retrieving and manipulating structured databases. On the contrary, MySQL is a relational database management system, like SQL Server, Oracle or IBM DB2, that is used to manage SQL databases.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q . What are some of the advantages of using MySQL?
+--
+
+Ease of Use: MySQL is known for its user-friendly interface and straightforward setup process. Its simplicity makes it an excellent choice for beginners and those new to database management.
+
+Performance and Scalability: MySQL is designed for optimal performance, especially in web applications. It can handle high levels of concurrent connections and efficiently manage large datasets. It also supports sharding and replication, allowing for horizontal scaling to handle increasing loads.
+
+Security: MySQL offers robust security features, including user authentication, access c ontrol, and encryption options. Administrators can set up fine-grained access controls to ensure data privacy and integrity.
+
+Open Source: MySQL is an open-source database system, which means it is free to use, modify, and distribute. This makes it accessible to a broad range of users and reduces the overall cost of ownership for projects and businesses.
+
+High Availability: MySQL supports various replication methods, enabling the creation of multiple copies of a database. This ensures high availability and data redundancy, which is crucial for mission-critical applications.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.Advantages of SQL : 
+
+SQL has many advantages which makes it popular and highly demanded. It is a reliable and efficient language used for communicating with the database. Some advantages of SQL are: 
+ 
+
+Faster Query Processing – 
+Large amount of data is retrieved quickly and efficiently. Operations like Insertion, deletion, manipulation of data is also done in almost no time. 
+ 
+No Coding Skills – 
+For data retrieval, large number of lines of code is not required. All basic keywords such as SELECT, INSERT INTO, UPDATE, etc are used and also the syntactical rules are not complex in SQL, which makes it a user-friendly language. 
+ 
+Portable – 
+It can be used in programs in PCs, server, laptops independent of any platform (Operating System, etc). Also, it can be embedded with other applications as per need/requirement/use. 
+ 
+Interactive Language – 
+Easy to learn and understand, answers to complex queries can be received in seconds. 
+
+Backup and Recovery: SQL databases have built-in backup and recovery tools that help recover data in case of system failures, crashes, or other disasters.
+
+Scalability: SQL databases can handle large volumes of data and can be scaled up or down as per the requirements of the application.
+
+Standardized Language – 
+Due to documentation and long establishment over years, it provides a uniform platform worldwide to all its users. 
+
+
+ 
+Multiple data views – 
+Scalability: SQL databases can handle large volumes of data and can be scaled up or down as per the requirements of the application.
+Security: SQL databases have built-in security features that help protect data from unauthorized access, such as user authentication, encryption, and access control.
+Data Integrity: SQL databases enforce data integrity by enforcing constraints such as unique keys, primary keys, and foreign keys, which help prevent data duplication and maintain data accuracy.
+Backup and Recovery: SQL databases have built-in backup and recovery tools that help recover data in case of system failures, crashes, or other disasters.
+Data Consistency: SQL databases ensure consistency of data across multiple tables through the use of transactions, which ensure that changes made to one table are reflected in all related tables.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q.What do you mean by ‘databases’?
+
+--
+A database is a structured collection of data that is organized, stored, and managed in a way that allows for efficient retrieval and manipulation of information. In a database, data is stored in tables, which consist of rows and columns, following a relational data model. Each row in a table represents a single record, and each column represents a specific attribute or piece of information related to that record.
+
+(OR)
+
+database is logically related data stored in tables and it is used to search data to answer queries
+
+
+(OR)
+
+A database is an organized collection of structured data that is stored and managed in a way that allows for efficient retrieval, manipulation, and storage of information. It serves as a digital repository for storing various types of data, such as text, numbers, images, and more, in a structured and systematic manner. Databases are crucial for managing and organizing data for various applications and systems.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q. What are some of the common MySQL commands?
+--
+SELECT, INSERT, UPDATE, and DELETE 
+
+SELECT - extracts data from a database
+UPDATE - updates data in a database
+DELETE - deletes data from a database
+INSERT INTO - inserts new data into a database
+CREATE DATABASE - creates a new database
+ALTER DATABASE - modifies a database
+CREATE TABLE - creates a new table
+ALTER TABLE - modifies a table
+DROP TABLE - deletes a table
+CREATE INDEX - creates an index (search key)
+DROP INDEX - deletes an index
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q.How do you view a database in MySQL?
+--
+by using command SHOW DATABASES
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Q.What are the basic components of an RDBMS?
+--
+1. Table-A table is a collection of data represented in rows and columns. Each table has a name in database.
+
+2. Record or Tuple - Each row of a table is known as record. It is also known as tuple. 
+
+3. Field or Column name or Attribute - The above table “STUDENT” has four fields (or attributes): Student_Id, Student_Name, Student_Addr & Student_Age
+
+4. Domain -A domain is a set of permitted values for an attribute in table
+
+5. Instance : The data stored in database at a particular moment of time is called instance of database. Database schema defines the attributes in tables
+ that belong to a particular database. The value of these attributes at a moment of time is called the instance of that database.
+
+6. Schema :  Design of a database is called the schema. For example: An employee table in database exists with the following attributes:
+
+7. Keys - Key plays an important role in relational database; it is used for identifying unique rows from table. It also establishes relationship among tables.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q. Differentiate between a database and a table ?
+--
+Database:
+
+Definition: A database is a collection of related data that is organized and stored in a structured manner. It serves as a container for multiple tables and other database objects, such as views, indexes, and stored procedures.
+Function: The database provides a way to group and manage data logically. It acts as a top-level organizational unit that contains one or more tables and maintains metadata and system information for the RDBMS.
+
+Table:
+
+Definition: A table is a two-dimensional structure within a database that represents a collection of related data organized in rows and columns.
+Function: Tables are used to store the actual data in a structured format. Each row in a table represents a specific record, and each column represents a specific attribute or piece of data related to that record.
+
+                                               (OR)
+
+
+database is a collection of several components like tables, indexes, stored procedures and so on. A table is a two dimensional structure that contains several columns and rows. It is contains all the data in form of several records
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q. Explain the various data types in SQL?
+--
+1.CHAR(Size),VARCHAR(Size),BINARY(Size),TEXT(Size),DATE,INT(size),FLOAT(size, d),INTEGER(size)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Q. What is the difference between SELECT, INSERT, UPDATE, and DELETE statements?
+
+SELECT : The SELECT SQL statement is used to fetch rows from a database table.
+INSERT : The INSERT statement is used to add new rows to a table. 
+UPDATE : The UPDATE statement is used to edit and update the values of an existing record. 
+DELETE : The DELETE statement is used to delete records from a database table.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q. How do you join tables in SQL?
+
+In SQL, you can join tables together to combine data from different tables based on certain conditions. There are several types of joins, but the most common ones are INNER JOIN, LEFT JOIN (or LEFT OUTER JOIN), RIGHT JOIN (or RIGHT OUTER JOIN), and FULL JOIN (or FULL OUTER JOIN). Here's a basic overview of how to perform each type of join:
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q.Explain the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN ?
+--
+(INNER) JOIN : Returns records that have matching values in both tables.
+ LEFT (OUTER) JOIN : Returns all records from the left table, and the matched records from the right table. 
+RIGHT (OUTER) JOIN : Returns all records from the right table, and the matched records from the left table.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q.What is a primary key and foreign key in a table?
+--
+primary key- The PRIMARY KEY constraint uniquely identifies each record in a table. Primary keys must contain UNIQUE values, and cannot contain NULL values. A table can have only ONE primary key; and in the table, this primary key can consist of single or multiple columns (fields).
+
+Foreign Key -  A FOREIGN KEY is a field (or collection of fields) in one table, that refers to the PRIMARY KEY in another table. The table with the foreign key is called the child table, and the table with the primary key is called the referenced or parent table.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q.Can a table have multiple foreign keys?
+--
+Yes, a table can have multiple foreign keys. In a relational database, foreign keys establish relationships between tables, allowing data from one table to reference data in another table. These relationships are essential for maintaining data integrity and enforcing business rules.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q.How do you create an index in SQL, and what is its purpose ?
+--
+In MySQL, you can create an index on one or more columns of a table to improve the speed of data retrieval for specific queries. Indexes help the database engine quickly find and retrieve rows based on the values in the indexed columns.
+
+--when we try to manupulate the value of index it will reduce the datat retreval speed
+types of index
+1)primary key index
+2)uniqe idex
+3)non cluster index
+
+Clustered Index.
+Non-Clustered Index.
+Column Store Index.
+Filtered Index.
+Hash Index.
+Unique Index.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q.What is the purpose of the GROUP BY clause?
+--The purpose of the GROUP BY clause in SQL is to group rows that have the same values in one or more specified columns and then apply aggregate functions to the groups. It allows you to perform calculations on subsets of data and obtain summarized results for each group. The GROUP BY clause is typically used in conjunction with aggregate functions like SUM, COUNT, AVG, MAX, and MIN.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q.How do you use the HAVING clause?
+--
+The HAVING clause in SQL is used in combination with the GROUP BY clause to filter the result set based on the aggregated values. While the WHERE clause filters rows before grouping, the HAVING clause filters the grouped results after aggregation.
+
+SELECT column1, column2, ..., aggregate_function(column)
+FROM table_name
+GROUP BY column1, column2, ...
+HAVING condition;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q.How do you handle NULL values in SQL?
+--
+In SQL, NULL represents the absence of a value or the unknown value for a particular data field. Dealing with NULL values appropriately is crucial in SQL queries and operations to avoid unexpected results. Here are some common ways to handle NULL values in SQL:
+
+IS NULL / IS NOT NULL:
+
+Use the IS NULL operator to check if a column has NULL values.
+Use the IS NOT NULL operator to check if a column has non-NULL values.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Q.What is normalization, and why is it important in databases?
+--
+Normalization is a database design technique used to organize and structure data in a relational database to minimize redundancy, improve data integrity, and ensure efficient data management. It involves breaking down large tables into smaller, related tables and establishing relationships between them.
+The primary goal of normalization is to reduce data duplication and avoid update anomalies, which can occur when the same data is stored in multiple places. By following a set of rules or normal forms, you can achieve a well-structured and more maintainable database. There are several normal forms, with each subsequent normal form building on the previous ones.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q.Explain the first, second, and third normal forms (1NF, 2NF, and 3NF) ?
+--
+
+Normalization is a database design technique used to organize and structure data in a relational database to minimize redundancy, improve data integrity, and ensure efficient data management. It involves breaking down large tables into smaller, related tables and establishing relationships between them.
+
+The primary goal of normalization is to reduce data duplication and avoid update anomalies, which can occur when the same data is stored in multiple places. By following a set of rules or normal forms, you can achieve a well-structured and more maintainable database. There are several normal forms, with each subsequent normal form building on the previous ones.
+
+The most commonly used normal forms are:
+
+First Normal Form (1NF):
+
+The table must have a primary key.
+Each column must contain atomic values (i.e., single, indivisible values).
+Second Normal Form (2NF):
+
+The table must be in 1NF.
+The table must have no partial dependencies.
+In simpler terms, all non-key attributes must depend on the entire primary key, not just part of it.
+Third Normal Form (3NF):
+
+The table must be in 2NF.
+The table must have no transitive dependencies.
+This means that non-key attributes should not depend on other non-key attributes.
+
+
+                                                  (OR)
+
+Normalization in SQL is the process of organizing and structuring a relational database to reduce data redundancy, improve data integrity, and simplify data management. It involves breaking down larger tables into smaller, related tables and establishing relationships between them. The goal of normalization is to minimize data duplication and anomalies while ensuring that the database remains consistent and accurate.
+
+The process of normalization is typically divided into several "normal forms," each with specific rules that guide the organization of data. The higher the normal form, the more normalized and refined the data structure becomes. The most commonly discussed normal forms are:
+
+First Normal Form (1NF): Ensures that each column in a table holds only atomic (indivisible) values, and each entry in the table is unique. No repeating groups or arrays are allowed.
+
+Second Normal Form (2NF): Building upon 1NF, this form eliminates partial dependencies by ensuring that non-key attributes are fully functionally dependent on the entire primary key.
+
+Third Normal Form (3NF): Building upon 2NF, this form eliminates transitive dependencies by ensuring that non-key attributes are not dependent on other non-key attributes.
+
+(BCNF)
+(4NF)
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q.How do you delete a table in SQL?
+--
+To delete a table in SQL, you can use the DROP TABLE statement.
+or using this command : DROP TABLE table_name;
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q.What is a subquery, and how is it used in SQL?
+--
+A subquery, also known as an inner query or nested query, is a query that is embedded within another query in SQL. It allows you to use the result of one query as a part of another query. Subqueries are enclosed within parentheses and can be used in various parts of a SQL statement, such as SELECT, FROM, WHERE, HAVING, and so on.
+SELECT column1, column2, ...
+FROM table_name
+WHERE column_name operator (SELECT column_name FROM another_table WHERE condition);
+
+
+                                                                  (OR)
+
+
+An inner query, also known as a subquery, is a query that's placed inside another query in SQL. It's used to fetch specific data that's needed for the main query to perform its task, like filtering, joining, or calculating values. Inner queries help break down complex tasks into smaller steps.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q.How do you calculate the average, sum, and count of a set of data in SQL?
+--
+1.Calculate the Average (AVG):
+The AVG() function calculates the average of a column's numeric values.
+
+Syntax:SELECT AVG(column_name) AS average_value FROM table_name;
+
+2.The SUM() function calculates the sum of a column's numeric values.
+
+Syntax:SELECT SUM(column_name) AS sum_value FROM table_name;
+
+3. Calculate the Count (COUNT):
+The COUNT() function calculates the number of rows or non-NULL values in a column.
+
+Syntax:SELECT COUNT(column_name) AS count_value FROM table_name;
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Q.What is the ORDER BY clause used for?
+--
+The ORDER BY clause is used in SQL to sort the result set of a query in ascending or descending order based on one or more columns. It allows you to arrange the rows returned by the query in a specified order, making the data more organized and easier to interpret.
+
+syntax :SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1 [ASC | DESC], column2 [ASC | DESC], ...;
+
+SELECT * FROM Customers
+ORDER BY Country DESC;
+
+SELECT * FROM Customers
+ORDER BY Country ;-- by default is asc order
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q.How can you prevent duplicates in a SELECT query result?
+--
+To prevent duplicates in a SELECT query result, you can use the DISTINCT keyword or appropriate aggregation functions. Here are a few ways to achieve this in SQL
+
+1.Using DISTINCT keyword:
+The DISTINCT keyword allows you to retrieve only unique values from the specified columns. It ensures that the query result contains no duplicate rows.
+syntax :SELECT DISTINCT column1, column2, ... 
+FROM your_table;
+
+2.Using UNION:
+If you have two or more SELECT queries that might return duplicate rows, you can use the UNION operator to combine the results and eliminate duplicates.
+syntax :SELECT column1, column2, ...
+FROM table1
+UNION
+SELECT column1, column2, ...
+FROM table2;
+
+
+The UNION operator selects only distinct values by default. To allow duplicate values, use UNION ALL:
+
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+
+
+SELECT column_name(s) FROM table1
+UNION ALL
+SELECT column_name(s) FROM table2;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q.How do you create and manage database views, and what are their benefits?
+--
+Creating and managing database views can be done using SQL. A view is a virtual table derived from the result of a SELECT query. It is stored in the database but does not physically contain data. Instead, it fetches data dynamically from the underlying tables whenever the view is queried.
+
+Creating a Database View:
+To create a view, you can use the CREATE VIEW statement followed by the view name and the SELECT query that defines the view's data.
+
+
+Benefits of Database Views:
+
+Data Abstraction: Views allow you to abstract complex queries and calculations into a simplified virtual table. This can make it easier for developers and users to interact with the database.
+
+Security: Views can help enforce security by restricting access to sensitive data. You can grant users access to views while keeping the underlying tables hidden.
+
+Simplified Querying: Instead of writing complex jo ins and filters repeatedly, views encapsulate these operations, making it easier to perform common queries.
+
+Data Integrity: Views can help enforce data integrity rules by allowing you to limit the columns and rows that users can access, preventing unintended data modifications.
+
+Performance Optimization: In some cases, views can be used to precompute or aggregate data, improving query performance as the underlying complex queries are executed only once when the view is created.
+
+Version Control: By using views, you can maintain consistent and standardized views of data across different applications, helping with version control and application maintenance.
+
+
+                                                   (OR)
+
+A "view" in SQL is like a virtual table created from a query. It lets you see data from one or more tables in a specific way without changing the actual data. Views simplify complex queries, enhance security by controlling access, and offer a convenient way to interact with data.
+
+
+
+Q .Type of keys in aql;
+
+1. Primary key
+It is the first key used to identify one and only one instance of an entity uniquely. An entity can contain multiple keys, as we saw in the PERSON table. The key which is most suitable from those lists becomes a primary key.
+
+2. Foreign key
+Foreign keys are the column of the table used to point to the primary key of another table.
+
+3. Super Key
+Super key is an attribute set that can uniquely identify a tuple. A super key is a superset of a candidate key.
+
+4 Candidate key
+A candidate key is an attribute or set of attributes that can uniquely identify a tuple.
+
+5. Alternate key
+There may be one or more attributes or a combination of attributes that uniquely identify each tuple in a relation
+
+6. Composite key
+Whenever a primary key consists of more than one attribute, it is known as a composite key. This key is also known as Concatenated Key.
+
+7. Artificial key
+The key created using arbitrarily assigned data are known as artificial keys.
+
+
+
+                                       (OR)
+
+Candidate Key: A candidate key is a super key with the minimum number of columns required to uniquely identify rows. From the candidate keys, one is chosen as the primary key.
+
+Primary Key (PK): A primary key uniquely identifies each row in a table. It must have unique values and cannot contain NULL values. Each table can have only one primary key.
+
+Super Key: A super key is a set of one or more columns that can be used to uniquely identify rows in a table. It can contain Null Values.
+
+Alternate Key: An alternate key is a candidate key (a set of columns that could be a primary key) that is not chosen as the primary key. It can also be unique and used for identification purposes.
+
+Foreign Key (FK): A foreign key establishes a link between two tables based on a column from one table that references the primary key in another table. It helps maintain referential integrity between related tables.
+
+Composite Key: A composite key is a key that consists of two or more columns, used together to uniquely identify rows. It's a combination of columns that forms a unique identifier.
+
+Unique Key: A unique key ensures that the values in a column (or set of columns) are unique across the table. Unlike the primary key, unique keys can allow NULL values, but each unique key value must appear only once in the table.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Types of SQL Commands
+1. DDL - Data Definition Language
+DDL changes the structure of the table like creating a table, deleting a table, altering a table, etc.
+
+Here are some commands that come under DDL:
+
+CREATE -  It is used to create a new table in the database.
+ALTER -  It is used to alter the structure of the database. This change could be either to modify the characteristics of an existing attribute or probably to add a new attribute.
+DROP - t is used to delete both the structure and record stored in the table.
+TRUNCATE - It is used to delete all the rows from the table and free the space containing the table.
+
+..........................................................................................................................
+
+
+2. DML - Data Manipulation Language
+DML commands are used to modify the database. It is responsible for all form of changes in the database.
+Here are some commands that come under DML:
+
+INSERT - The INSERT statement is a SQL query. It is used to insert data into the row of a table.
+UPDATE - This command is used to update or modify the value of a column in the table.
+DELETE -  It is used to remove one or more row from a table.
+
+...........................................................................................................................
+
+3. DCL - Data Control Language
+DCL commands are used to grant and take back authority from any database user.
+
+Here are some commands that come under DCL:
+
+Grant - It is used to give user access privileges to a database.
+Revoke - It is used to take back permissions from the user.
+
+...........................................................................................................................
+
+
+T4. Cl - Transaction Control Language
+TCL commands can only use with DML commands like INSERT, DELETE and UPDATE only.
+
+Here are some commands that come under TCL:
+
+COMMIT - Commit command is used to save all the transactions to the database.
+ROLLBACK -  Rollback command is used to undo transactions that have not already been saved to the database.
+SAVEPOINT - It is used to roll the transaction back to a certain point without rolling back the entire transaction.
+
+...........................................................................................................................
+
+
+5. DQL - Data Query Language
+DQL is used to fetch the data from the database.
+
+It uses only one command:
+
+SELECT - This is the same as the projection operation of relational algebra. It is used to select the attribute based on the condition described by WHERE clause.
+
+
+
+Q.Explain Constraints.
+
+SQL constraints are used to specify rules for the data in a table.
+
+Types Of Constraints
+
+NOT NULL - Ensures that a column cannot have a NULL value
+UNIQUE - Ensures that all values in a column are different
+PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+FOREIGN KEY - Prevents actions that would destroy links between tables
+CHECK - Ensures that the values in a column satisfies a specific condition
+DEFAULT - Sets a default value for a column if no value is specified
+CREATE INDEX - Used to create and retrieve data from the database very quickly
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+create database SchoolDB; 									 ## crate a databsase
+use SchoolDB;   										 ## to use that database 
+create table studentDetails(
+	StudentID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    City varchar(255)
+);   												 ## creating the table and assigning the row 
+Insert into studentDetails values(01,"lalit","reddy","bbs",50); 				 ## inserting the data into the table
+Insert into studentDetails values(02,"sai","kiran","Hyd");
+Insert into studentDetails values(03,"Siva","Pavan","TENl");
+Insert into studentDetails values(04,"Ranjith","Kumar","BEL");
+Insert into studentDetails values(05,"ch","Pavan","UNkown");
+
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)    ##another method of adding the value in the database
+VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+
+select StudentID from studentDetails;  								 ## selecting a particular column fromtbale
+select * from studentDetails;         								 ## display all the table deatils
+DELETE FROM studentDetails WHERE LastName="lalit" ;  						 ##delete a particluar row from the table 
+update studentDetails set city="B'LURU" where city="UNkown"; 					 ## updtaing a particular data in the table.
+ALTER TABLE studentDetails
+ADD AGE INT(20);    										 ## ADDING A NEW COLOMN TO THE TABLE
+update studentDetails set AGE=20 where StudentID=2;
+update studentDetails set AGE=18 where StudentID=3;
+update studentDetails set AGE=30 where StudentID=4;
+update studentDetails set AGE=20 where StudentID=5;
+select * from studentDetails  where AGE is null; 						 ## USED TO CHECK WEATHER COL HAS ANY NULL VALUES IS PRESENT OR NOT
+select * from studentDetails where AGE is not null;  						 ## USED TO CHECK WEATHER COL HAS ANY NO - NULL VALUES
+----------------------------------------------------------------------------------------------------------------------------------------------------
+create database studentDb;                                                                          - creation of database
+
+use studentDb                                                                                       - using database
+
+create table student(studentId int,name varchar(20),percentage float)                               - creating table
+
+select * from student                                                                               - display the table
+
+insert into student values(100,'Saikiran');                                                         - inserting data into table
+
+delete from student where studentId=100;                                                            - deleting record based on where condition
+
+update student set name='saikiranchary' where studentId=100                                         - updating a record
+
+update student set name=null where studentId=100;                                                   - making a value null or removing a value from table;
+
+insert into student(name) values('saikiran')                                                        - adding specific value 
+
+select name,percantage from student where percantege > 50 and percentage <90                        - to get the values between range
+
+select * from student wherer percentage > 70                                                        - get student data which having a percentage of above 70
+
+select * from student where name like 's'                                                           - print data which name start with 's' letter
+ 
+seletc * from studnet where name in ('sai','vishal')                                                - get the data fo sai and vishal 
+
+select avg(percentage) from student                                                                 - to calculate the average
+
+select sum(percentage) from student;                                                                - to calculate the sum of the column
+
+select count(studentId) from student;                                                               - to count the no of records or rows
+
+select min(percentage) from student;                                                                - to get the lowest value from the column
+
+select max(percenatge) from studnet;                                                                - to get the highest value in the column
+
+select * from student where name='saikiran' and percentage>80;                                      - get the data base on condition 
+
+select * from student where percentage between 60 and 90                                            - get the data between range using between command
+
+select * from student order by percentage;                                                          - get the datat in order
+
+select distinct * from student;                                                                     - to remove duplicate rows or record
+
+create index name on student(name)                                                                  - to create index for specific column
+ 
+select name,count(percantage) as avgPercantage from student group by name;                          - using group by clause
+
+select name,studentId,count(percanteg) as avgPercantage,count(city) as cityCount from student group by name,city  - using multiple columns
+
+select name count(percantage) as totalpercantage from student group by name having count(city)>=1;  -having clause combiantion with group by clause
+
+
+-------------------------------------------------------------------ALTER KEY----------------------------------------------------------------------------
+
+alter table student add address varchar(50)                                                         - for adding new column
+
+alter table student modify address varchary(100)                                                    - modifying column
+
+alter table student droup column address                                                            - droupin the column from table
+
+alter tabale student rename column address to stAddress                                             - changing the column name
+
+alter table student rename to studentData;                                                          - changing the table name
+ 
+alter table student add(city varchar(20),phoneNumber int)                                           - adding muiltiplle columns at once
+
+alter table student droup column city, drop column phoneNumber                                      - droping the multiple columns at once
+
+alter table student constraints drstId primary key (studentID)                                      - adding primary key to existing column
+
+alter table student droup drstId;                                                                   - droping the primary to column
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+select * from studentDb where fee(select max(fee)from studentDb)                                                        - inner joints
+select *from studentDb where fee(select max(fee)f from studentdb wherer fee <(select max(fee) from studentDb))          - to get max 2nd value
+
+select * from user inner join order on user.userId=oerder.userId                                    - inner query
+alter table table add primary key(studentId)
+alter table tablename
+
+
+
+Amazon Relational Database Service (RDS)
+MS SQL.
+Oracle Database.
+Cloud SQL.
+Amazon Aurora.
+MySQL.
+Azure SQL Database.
+
+
+
+TRUNCATE TABLE CUSTOMERS;for trancate comaand
+delete from subject where subjectName='social';
+
+Semi-structured data (also known as partially structured data) is a type of data that doesn't follow the tabular structure associated with relational databases or other forms of data tables but does contain tags and metadata to separate semantic elements and establish hierarchies of records and fields.
+
+
+
+
+
+
